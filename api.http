@@ -8,10 +8,10 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "Produto 2",
-    "slug": "produto-2",1
-    "description": "Descrição do produto 2",
-    "price": 10000
+    "name": "Produto 555",
+    "slug": "produto-555",
+    "description": "Descrição do produto 5",
+    "price": 64987
 }
 
 ### 
@@ -19,6 +19,14 @@ GET http://localhost:3000/products/cm6mo53fi0000v1r0vfftpxri
 
 ###
 PATCH http://localhost:3000/products/cm6mo53fi0000v1r0vfftpxri
+Content-Type: application/json
+
+{
+    "name": "Produto 555",
+    "slug": "produto-555",
+    "description": "Descrição do produto 5",
+    "price": 65497
+}
 
 ###
-DELETE http://localhost:3000/products/cm6mo53fi0000v1r0vfftpxri
+DELETE http://localhost:3000/products/cm6mwhd010000v12o03d4qr1n

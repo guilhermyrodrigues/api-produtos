@@ -27,10 +27,19 @@ export class ProductsService {
   }
 
   update(id: string, updateProductDto: UpdateProductDto) {
-    return `This action updates a #${id} product`;
+    return this.prismaService.product.update({
+      where: {
+        id,
+      },
+      data: updateProductDto,
+    })
   }
 
   remove(id: string) {
-    return `This action removes a #${id} product`;
+    return this.prismaService.product.delete({
+      where: {
+        id,
+      }
+    });
   }
 }
